@@ -1,0 +1,5 @@
+royal blue --> #032CBF
+GOLD --> #EFF059
+IVONY --> #E1E1DD
+dark-gray --> #7A7A7A
+

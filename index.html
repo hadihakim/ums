@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./index.css">
+<link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="head">
+		<div id="rightparthead" class="rightparthead">
+		<span class="openmenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<div id="headimg" class="headimg"></div>
+		</div>
+		
+		<div class="leftprofile">
+			<div class="profileimg"></div>
+			<ul>
+				<li>
+					<p>Student Name<i class="far fa-chevron-down"></i></p>
+					<ul class="test">
+						<li><a href="./editprofile.html">Profile picture<i class="fad fa-portrait"></i></a></li>
+						<li><a href="./editpassword.html">Password<i class="fal fa-lock-alt"></i></a></li>
+						<li><a href="./login.html">Sign out<i class="fas fa-sign-out-alt"></i></a></li>
+			        </ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	
+<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <hr>
+	  <div class="sidemenudivs">
+	  <a href="./index.html">Home</a>
+	  </div>
+	  <hr>
+	  <div class="sidemenudivs">
+	  <a href="#">Registration</a>
+	  </div>
+	  <hr>
+	  <div class="sidemenudivs">
+	  <a href="#">Payments</a>
+	  </div>
+	  <hr>
+	  <div class="sidemenudivs">
+	  <a href="#">Application</a>
+	  </div>
+	  <hr>
+	  <div class="sidemenudivs">
+	  <a href="#">Curriculum</a>
+	  </div>
+	  <hr>
+	  <div class="sidemenudivs">
+	  <a href="#">Schedule</a>
+	  </div>
+	  <hr>
+	  <div class="sidemenudivs">
+	  <a href="#">Email</a>
+	  </div>
+	  <hr>
+</div>
+
+<div class="main">
+  <p id="displayDateTime"></p>
+
+
+	<div class="profile">
+		<div class="headinfo"><p>Student info</p></div>
+		<div class="headicons"><a href="javascript:void(0)"><i id="iconprofile" onclick="profilesection() & changeprof() " class="far fa-times"></i></a></div>
+
+	</div>
+
+
+	<table class="profiletable "id="profiletable">
+  <tr>
+    <th>Student ID</th>
+    <td>2004111</td>
+    <th>Application ID</th>
+    <td>123</td>
+    <th>Major</th>
+    <td>Computing</td>
+  </tr>
+  <tr>
+    <th>Student Name</th>
+    <td>Hadi Ali Hakim</td>
+    <th>Base Campus</th>
+    <td>Beirut</td>
+    <th>Blocked</th>
+    <td>No</td>
+  </tr>
+  
+  </table>
+
+	<div class="gpa">
+		<div class="headinfo"><p>GPA</p></div>
+		<div class="headicons"><a href="javascript:void(0)"><i id="iconsection" onclick="displaysection() & change() " class="far fa-times"></i></a></div>
+
+	</div>
+
+
+	<table id="gpatable">
+  <tr>
+    <th>#</th>
+    <th>Semester</th>
+    <th>GPA</th>
+    <th>Cumulative GPA</th>
+    <th>Nb of Credits</th>
+    <th>Probation</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Semester1</td>
+    <td>GPA1</td>
+    <td>Cumulative GPA1</td>
+    <td>Nb of Credits1</td>
+    <td>Probation1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Semester2</td>
+    <td>GPA2</td>
+    <td>Cumulative GPA2</td>
+    <td>Nb of Credits2</td>
+    <td>Probation2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Semester3</td>
+    <td>GPA3</td>
+    <td>Cumulative GPA3</td>
+    <td>Nb of Credits3</td>
+    <td>Probation3</td>
+  </tr>
+   <tr>
+    <td>4</td>
+    <td>Semester4</td>
+    <td>GPA4</td>
+    <td>Cumulative GPA4</td>
+    <td>Nb of Credits4</td>
+    <td>Probation4</td>
+  </tr>
+   <tr>
+    <td>5</td>
+    <td>Semester5</td>
+    <td>GPA5</td>
+    <td>Cumulative GPA5</td>
+    <td>Nb of Credits5</td>
+    <td>Probation5</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Semester6</td>
+    <td>GPA6</td>
+    <td>Cumulative GPA6</td>
+    <td>Nb of Credits6</td>
+    <td>Probation6</td>
+  </tr>
+  </table>
+
+ </div>
+
+
+<script>
+function openNav() {
+   if (x.matches) {
+   	document.getElementById("mySidenav").style.width = "100vw";
+}
+else
+	document.getElementById("mySidenav").style.width = "18vw";
+  document.getElementById("rightparthead").style.marginLeft = "18vw";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("rightparthead").style.marginLeft = "0px";
+}
+
+function displaysection(){
+	if (document.getElementById("iconsection").className=="far fa-times") {
+		document.getElementById("gpatable").style.display = "none";
+	}
+	else
+		document.getElementById("gpatable").style.display = "table";
+}
+
+function profilesection(){
+	if (document.getElementById("iconprofile").className=="far fa-times") {
+		document.getElementById("profiletable").style.display = "none";
+	}
+	else
+		document.getElementById("profiletable").style.display = "table";
+}
+
+
+function changeprof (iconprofile){
+  if(document.getElementById("iconprofile").className=="far fa-times"){
+    document.getElementById("iconprofile").className = "far fa-chevron-down";
+  }else{
+    document.getElementById("iconprofile").className = "far fa-times";
+  }
+} 	
+
+function change (iconsection){
+  if(document.getElementById("iconsection").className=="far fa-times"){
+    document.getElementById("iconsection").className = "far fa-chevron-down";
+  }else{
+    document.getElementById("iconsection").className = "far fa-times";
+  }
+}
+
+var today = new Date();
+var day = today.getDay();
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+//var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+//var dateTime = date;
+ 
+document.getElementById("displayDateTime").innerHTML =daylist[day]+' '+date;
+
+
+var x = window.matchMedia("(max-width: 500px)");
+</script>
+ 
+</body>
+</html> 

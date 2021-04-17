@@ -1,0 +1,261 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #032CBF;
+}
+
+.sidenav {
+  height: 100%;
+  width: 18vw;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: #E1E1DD;
+  overflow-x: hidden;
+  transition: 0.6s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #032CBF;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  opacity: 0.9;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.head{
+	width: 100vw;
+	height: 7vh;
+	z-index: 100;
+	background-color: #032CBF;
+	top: 0;
+	display: flex;
+	position: fixed;
+}
+
+.headimg{
+	background-image: url(./images/umslogo.png);
+	background-size: cover;
+	background-color: #032CBF ;
+	background-position: center;
+	width: 150px;
+}
+
+.sidemenudivs:hover{
+	background-color: #EFF059;
+}
+
+.openmenu{
+	color: #E1E1DD;
+}
+
+.leftprofile{
+	position: absolute;
+	right: 10px;
+	display: flex;
+	width: 170px;
+	cursor: pointer;
+	align-items: center;
+
+}
+
+.far{
+	margin-left: 5px;
+	color: #E1E1DD
+}
+
+.profileimg{
+	background-image: url(./images/alriyadilogo.png);
+	background-size: cover;
+	background-position: center;
+	width: 40px;
+	border-radius: 50%;
+	height: 7vh;
+}
+
+.leftprofile>ul>li>p{
+	margin-left: 5px;
+	color: #E1E1DD;
+	
+}
+
+.rightparthead{
+	width: 20vw;
+	margin-left: 18vw;
+	transition: 0.6s;
+	display: flex;
+}
+
+
+.leftprofile ul li{
+
+  position: relative;
+  float: left;
+  list-style: none;
+  width: 100%;
+
+  
+ }
+
+.leftprofile ul li a{
+    display: block;
+    text-decoration: none;
+	color: #032CBF;
+	font-size: 16px;
+	padding: 8px 10px;
+	
+}
+
+.leftprofile ul li ul li:hover{
+    background-color: #EFF059;
+    
+}
+
+.leftprofile ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #E1E1DD;
+    margin-top: 12px;
+    width: 140px;
+    right: 1px;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+
+.leftprofile:hover ul{
+	display: flex;
+}
+
+.leftprofile i{
+	margin-left: 3px;
+}
+
+.main{
+	background-color: #032CBF;
+	margin-top: 7vh;
+	height: 93vh;
+	position: relative;
+	background-color: #032CBF;
+	margin-left: 19vw;
+}
+
+
+table{
+	position: absolute;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 26vh;
+}
+
+.gpa{
+	position: absolute;
+	width: 80%;
+	height: 5vh;
+	margin-top: 20vh;
+	background-color: #E1E1DD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+td, th{
+  border: 1px solid #E1E1DD;
+  text-align: left;
+  padding: 8px;
+}
+
+td{
+	color: #E1E1DD;
+}
+
+th {
+  background-color: #EFF059;
+  color: #032CBF;
+}
+
+.headinfo{
+	font-weight: bold;
+	font-size: 25px;
+	color: #032CBF;
+
+}
+
+.headicons{
+	position: absolute;
+	right: 1vw;	
+}
+
+.headicons i{
+	color: #032CBF;
+}
+
+.profile{
+	position: absolute;
+	width: 80%;
+	height: 5vh;
+	margin-top: 1vh;
+	background-color: #E1E1DD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profiletable{
+
+	position: absolute;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 7vh;
+}
+
+.profiletable>th{
+	background-color: #EFF059; 
+
+}
+
+#displayDateTime{
+	color: #E1E1DD;
+	font-size: 15px;
+}
+
+@media only screen and (max-width: 500px){
+	.sidenav{
+		width: 100vw;
+	}
+}
+
+
+
+
+
+

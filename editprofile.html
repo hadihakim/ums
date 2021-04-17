@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit profile picture</title>
+	<link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./editprofile.css">
+</head>
+<body>
+	<div class="main">
+		<div class="picdiv">
+			<div class="passimg"><img src="./images/upload.png"></div>
+
+			
+		</div>
+		<div class="formdiv">
+			<h1>Change Profile Picture</h1>
+			<br>
+			
+			<div id="profilepic" class="profilepic"></div>
+			<form id="myForm" action="javascript:void(0)">
+				<input id="upload" type="file" name="upload" style="width:200px"><br><br>
+				<button id="back" onclick="location.href='./index.html'" >Back</button> 
+				<button id="submit" onclick="change()">Upload</button>
+			</form>
+			
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		function change(){
+		var pic = document.getElementById("upload").value;
+		 var res = pic.substring(12, pic.length);
+		document.getElementById("profilepic").style.backgroundImage = "url(./images/"+res+")";
+		}
+
+	</script>
+
+</body>
+</html>
