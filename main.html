@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enrolled</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+
+<link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./index.html">Home</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./enroll.html">Registration</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./payment.html">Payments</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./application.html">Application</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./curri.html">Curriculum</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./schedule.html">Schedule</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./email.html">Email</a>
+
+    </div>
+
+    <hr>
+
+</div>
+
+
+ 
+
+<div class="container">
+    <div id="rightparthead" class="rightparthead">
+        <span class="openmenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="headimg" class="headimg"></div>
+    </div>
+
+    <div class="highercontainer">
+
+        <div>   
+
+        </div>
+
+    </div>
+     <div class="gpa">
+        <div class="headinfo"><p>GPA</p></div>
+        <div class="headicons"><a href="javascript:void(0)"><i id="iconsection" onclick="displaysection() & change() " class="far fa-times"></i></a></div>
+
+    </div>
+    <div class="lowercontainer">
+
+        <div>
+
+            <table id="table">
+
+                    <tr>
+
+                        <th>Course name</th>
+
+                        <th>Instructor</th>
+
+                        <th>Credits</th>
+
+                        <th>Section</th>
+
+                        <th>Time</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course 1</td>
+
+                        <td>Mhmd haj</td>
+
+                        <td>3</td>
+
+                        <td>A</td>
+
+                        <td>12:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course name</td>
+
+                        <td>Instructor</td>
+
+                        <td>Credits</td>
+
+                        <td>Section</td>
+
+                        <td>Time</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Course name</td>
+
+                        <td>Instructor</td>
+
+                        <td>Credits</td>
+
+                        <td>Section</td>
+
+                        <td>Time</td>
+
+                    </tr>
+
+            </table>
+
+        </div>
+        
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function displaysection(){
+    if (document.getElementById("iconsection").className=="far fa-times") {
+        document.getElementById("table").style.display = "none";
+    }
+    else
+        document.getElementById("table").style.display = "table";
+}
+
+function change (iconsection){
+  if(document.getElementById("iconsection").className=="far fa-times"){
+    document.getElementById("iconsection").className = "far fa-chevron-down";
+  }else{
+    document.getElementById("iconsection").className = "far fa-times";
+  }
+}
+
+function openNav() {
+   if (x.matches) {
+    document.getElementById("mySidenav").style.width = "100vw";
+}
+else
+    document.getElementById("mySidenav").style.width = "18vw";
+  document.getElementById("rightparthead").style.marginLeft = "18vw";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("rightparthead").style.marginLeft = "0px";
+}
+
+var x = window.matchMedia("(max-width: 500px)");
+</script>
+</html>

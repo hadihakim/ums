@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enrolled</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="./payment.css">
+
+<link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./index.html">Home</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./enroll.html">Registration</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./payment.html">Payments</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./application.html">Application</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./curri.html">Curriculum</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./schedule.html">Schedule</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./email.html">Email</a>
+
+    </div>
+
+    <hr>
+
+    <div class="sidemenudivs">
+
+    <a href="./login.html">Sign out</a>
+
+    </div>
+
+    <hr>
+
+</div>
+
+
+<div class="container">
+    <div id="rightparthead" class="rightparthead">
+        <span class="openmenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="headimg" class="headimg"></div>
+    </div>
+    <div class="schedulehead">
+        My Payments
+        
+    </div><br>
+
+    <div class="highercontainer">
+
+        <div
+
+        <div class="gpa secselect">
+        <div class="headinfo"><p>Select Semester</p></div>
+        <div class="headicons"><a href="javascript:void(0)"><i id="iconsection" onclick="displaysection() & change() " class="far fa-times"></i></a></div>
+
+      </div><br>
+
+        <div class="selectlist" id="selectlist">
+            <p>Semester</p>
+
+            <select name="" id="">
+
+                <option value="course1">Fall 2020-2021</option>
+
+                <option value="course2">semester 2</option>
+
+                <option value="course3">semester 3</option>
+
+                <option value="course4">semester 4</option>
+
+            </select>
+            <button>List</button>
+
+        </div><br><br>
+
+    </div>
+
+     <div class="gpa">
+        <div class="headinfo"><p>Fall 2020-2021</p></div>
+        <div class="headicons"><a href="javascript:void(0)"><i id="iconsec" onclick="profilesection()& changeprof() " class="far fa-times"></i></a></div>
+
+    </div>
+    <div class="lowercontainer">
+
+        <div>
+
+            <table id="table">
+
+                    <tr>
+
+                        <th>#</th>
+
+                        <th>Semester</th>
+
+                        <th>Semester Status</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Fall 2020-2021</td>
+
+                        <td>regStart</td>
+
+                        
+
+                    </tr>
+
+                  
+                   
+
+            </table><br><br>
+
+        </div>
+
+    </div>
+
+    <div class="gpa">
+        <div class="headinfo1"><p>My Vouchers</p></div>
+        <div class="headicons1"><a href="javascript:void(0)"><i id="iconsec2" onclick="profilesection2()& changeprof2() " class="far fa-times"></i></a></div>
+
+    </div>
+    <div class="lowercontainer">
+
+        <div>
+
+            <table id="voucher">
+
+                    <tr>
+
+                        <th>#</th>
+
+                        <th>System Ref</th>
+
+                        <th>Bank Ref</th>
+
+                        <th>Amount(L.L)</th>
+
+                        <th>Creation Date</th>
+                        <th>Due Date</th>
+                        <th>Payment Date</th>
+                        <th>Penalty(L.L)</th>
+                        <th>Paid At</th>
+                        <th>Type</th>
+                        
+
+                    </tr>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>23423</td>
+
+                        <td>23423</td>
+
+                        <td>100000</td>
+
+                        <td>2-2-2021</td>
+                        <td>2-3-2021</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>SYSTEM</td>
+                        <td>NA</td>
+
+                    </tr>
+
+                   <tr>
+
+                        <td>2</td>
+
+                        <td>23423</td>
+
+                        <td>23423</td>
+
+                        <td>100000</td>
+
+                        <td>2-2-2021</td>
+                        <td>2-3-2021</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>SYSTEM</td>
+                        <td>NA</td>
+
+                    </tr>
+
+                     <tr>
+
+                        <td>3</td>
+
+                        <td>23423</td>
+
+                        <td>23423</td>
+
+                        <td>100000</td>
+
+                        <td>2-2-2021</td>
+                        <td>2-3-2021</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>SYSTEM</td>
+                        <td>NA</td>
+
+                    </tr>
+
+                    
+
+                    
+
+                   
+
+            </table><br><br>
+
+        </div>
+
+    </div>
+
+    
+    <div class="lowercontainer lower2">
+
+        <div>
+
+            <table id="paymentpay">
+
+                    <tr>
+
+                        <th>TOTAL PAID</th>
+
+                        <td>342423</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>TOTAL NOT PAID</th>
+
+                        <td>2342342</td>
+
+                    </tr>
+
+                   <tr>
+
+                        <th>TOTAL DUE</th>
+
+                        <td>23234</td>
+
+                    </tr>
+
+                     <tr>
+
+                        <th>TOTAL</th>
+
+                        <td>23423</td>
+
+                    </tr>
+
+                    
+
+                    
+
+                   
+
+            </table>
+
+        </div>
+
+    </div><br><br>
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript">
+    function displaysection(){
+    if (document.getElementById("iconsection").className=="far fa-times") {
+        document.getElementById("selectlist").style.display = "none";
+    }
+    else
+        document.getElementById("selectlist").style.display = "block";
+}
+
+function change (iconsection){
+  if(document.getElementById("iconsection").className=="far fa-times"){
+    document.getElementById("iconsection").className = "far fa-chevron-down";
+  }else{
+    document.getElementById("iconsection").className = "far fa-times";
+  }
+}
+
+function openNav() {
+   if (x.matches) {
+    document.getElementById("mySidenav").style.width = "100vw";
+}
+else
+    document.getElementById("mySidenav").style.width = "18vw";
+  document.getElementById("rightparthead").style.marginLeft = "18vw";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("rightparthead").style.marginLeft = "0px";
+}
+
+
+function profilesection(){
+    if (document.getElementById("iconsec").className=="far fa-times") {
+        document.getElementById("table").style.display = "none";
+    }
+    else
+        document.getElementById("table").style.display = "table";
+}
+
+
+function changeprof (iconprofile){
+  if(document.getElementById("iconsec").className=="far fa-times"){
+    document.getElementById("iconsec").className = "far fa-chevron-down";
+  }else{
+    document.getElementById("iconsec").className = "far fa-times";
+  }
+}
+
+
+
+function profilesection2(){
+    if (document.getElementById("iconsec2").className=="far fa-times") {
+        document.getElementById("voucher").style.display = "none";
+    }
+    else
+        document.getElementById("voucher").style.display = "table";
+}
+
+
+function changeprof2 (iconprofile){
+  if(document.getElementById("iconsec2").className=="far fa-times"){
+    document.getElementById("iconsec2").className = "far fa-chevron-down";
+  }else{
+    document.getElementById("iconsec2").className = "far fa-times";
+  }
+}
+
+var x = window.matchMedia("(max-width: 500px)");
+</script>
+</html>
